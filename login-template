@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo dos animes</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(5, 5, 49);
+        }
+        #search,#account{
+            height: 32px;
+            width: 26px;
+            padding: 15px;
+        }
+            #account{
+            margin-right: 400px;
+        }
+        #img-container img{
+            height: 54px;
+            width: 90px;
+            margin-left: 400px;
+        }
+
+        header{
+            background: rgb(1, 1, 27);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #menu1-container ul{
+            display: flex;
+            
+        }
+        #menu1-container li{
+            list-style: none;
+            padding: 15px 45px;
+        }
+        #menu1-container a{
+            text-decoration: none;
+            color: rgb(209, 209, 209);
+            font: normal 15px apple;
+            font-weight: 700;
+        }
+        #menu1-container a:hover{
+            transition: all 0.4s ease-in-out;
+            color: white;
+            font: normal 15px apple;
+            font-weight: 700;
+        }
+        #menu1-container{
+            align-self: center;
+        }
+        #bg{
+            width: 100%;
+            height: 400px;
+        }
+        #loginbg {
+            text-align: center;
+            color: white;
+            font: normal 32px apple;
+            position: absolute;
+            top: 13%;
+            left: 42%;
+ 
+        }
+        #conteudo{
+            display: flex;
+            justify-content: center;
+            color: white;
+            font: normal 32px apple;
+        }
+        #loginform{
+            display: flex;
+            flex-direction: column;
+            margin-right: 80px;
+            margin-top: 120px;
+        }
+        #vert{
+            height: 500px;
+            width: 2px;
+            margin-top: 80px;
+
+        }
+        #registrarbtn{
+            display: flex;
+            flex-direction: column;
+            margin-left: 80px;
+            margin-top: 120px;
+            
+        }
+        #loginform input{
+            margin-bottom: 20px;
+            width: 400px;
+            height: 45px;
+            font-size: 20px;
+        }
+        #loginform button{
+            width: 120px;
+            height: 45px;
+            color: white;
+            background: rgb(255, 76, 76);
+            margin-right: 30px;
+            font: normal 18px apple;
+        }
+        #registrarbtn button{
+            width: 180px;
+            height: 45px;
+            color: white;
+            background: rgb(255, 76, 76);
+            margin-right: 30px;
+            font: normal 18px apple;
+
+        }
+        #loginform span{
+            font: normal 24px apple;
+        }
+        #loginform a,#registrarbtn a{
+            text-decoration: none;
+            color: white;
+        }
+        #ou {
+            text-align: center;
+            font: normal 24px apple;
+            color: white;
+            margin-right: 10px;
+        }
+        #redes{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #redes button{
+            width: 300px;
+            height: 50px;
+            color: white;
+            font: normal 24px apple;
+            margin-top: 10px;
+        }
+        #face{
+            background: blue;
+        }
+        #google{
+            background: red;
+        }
+        #twitter{
+            background: cyan;
+        }
+        footer{
+            background: rgb(1, 1, 27);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 60px;
+            bottom: 0;
+            padding-top: 30px;
+            padding-bottom: 60px;
+
+        }
+        #img-container-footer{
+            height: 54px;
+            width: 90px;
+            margin-left: 400px;
+
+        }
+        #menu2-container p{
+            color: white;
+            margin-right: 400px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header id="cabeçalho">
+        <div id="img-container">
+            <a href="#"><img src="anime.png" alt="anime"></a>
+
+        </div>
+        <div id="menu1-container">
+            <nav>
+                <ul>
+                    <li><a href="#">Menu inicial</a></li>
+                    <li><a href="#">Categorias &#11206;</a></li>
+                    <li><a href="#">Nosso blog</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>    
+        </div>
+        <div id="menu2-container">
+            <nav>
+                <ul>
+                    <a href="#"><img src="search.png" alt="search" id="search"></a>
+                    <a href="#"><img src="account.png" alt="account" id="account"></a>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <img src="animebg.png" alt="animebg" id="bg">
+    <div id="loginbg">
+        <h1><b>Login</b></h1>
+        <p>Bem vindo ao blog official de anime</p>
+    </div>
+    <div id="conteudo">
+        <div id="loginform">
+            <h2>Login</h2>
+            <input type="email" placeholder="📧Endereço de e-mail">
+            <input type="password" placeholder="🔐Senha">
+            <span><button type="submit"><a href="#">Login agora</a></button> <a href="#">Esqueçeu sua senha:</a></span>
+        </div>
+        <img src="linha-vert.jpeg" alt="linha vert" id="vert">
+        <div id="registrarbtn">
+            <h2>Não tem uma conta?</h2>
+            <button type="submit"><a href="#">Registrar agora</a></button>
+
+        </div>
+    </div>
+    <p id="ou">ou</p>
+    <div id="redes">
+    <button id="face">   👤    Entrar com Facebook</button>
+    <button id="google"> 🔍    Entrar com Google</button>
+    <button id="twitter">🐦    Entrar com Twitter</button>
+    </div>  
+    <footer>
+        <div id="img-container-footer">
+            <a href="#"><img src="anime.png" alt="anime"></a>
+
+        </div>
+        <div id="menu1-container">
+            <nav>
+                <ul>
+                    <li><a href="#">Menu inicial</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Nosso blog</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>    
+        </div>
+        <div id="menu2-container">
+            <p>Copyright ©2023 All rights reserved <br> | This template is made with <br>  by Colorlib</p>
+
+        </div>
+
+    </footer>
+    
+</body>
+</html>
